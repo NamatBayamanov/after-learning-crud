@@ -1,0 +1,15 @@
+.Exchange {
+  
+}
+.Exchange {
+  & .article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 10px;
+    justify-content: center;
+  }
+  & .input {
+    text-transform: uppercase;
+  }
+}

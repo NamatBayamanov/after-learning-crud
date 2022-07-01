@@ -1,0 +1,27 @@
+.Exchange2 {
+  
+}
+
+.Exchange2 {
+  & .table {
+    border: 1px solid black;
+    font-size: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s;
+    & h2 {
+      border-bottom: 1px solid black;
+      text-transform: uppercase;
+    }
+    & section {
+      color: rgb(0, 255, 0);
+    }
+  }
+}
+.Exchange2:hover {
+  box-shadow: 0 0 10px black;
+  transition: all .2s;
+
+}
