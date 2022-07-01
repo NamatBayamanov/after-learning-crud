@@ -9,7 +9,7 @@ function Exchange() {
   const [baseCurrency, setBaseCurrency] = useState("KGS");
 
   function onChangeRates(event) {
-    fetch(`http://www.floatrates.com/daily/${baseCurrency}.json`).then((response) => response.json()).then((data) => setRates(data));
+    fetch(`https://www.floatrates.com/daily/${baseCurrency}.json`).then((response) => response.json()).then((data) => setRates(data));
   }
 
   const output = Object.values(rates).map((currentValue, index, arr) => (
