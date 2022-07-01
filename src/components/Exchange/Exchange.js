@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Exchange2 from "./Exchange2/Exchange2";
 import classes from "./Exchange.module.scss";
 
@@ -16,7 +16,7 @@ function Exchange() {
     <Exchange2 key={currentValue.numericCode} from={baseCurrency} to={currentValue.code} rate={currentValue.inverseRate}/>
   ));
 
-  useEffect(() => onChangeRates, [setRates]);
+  // useEffect(() => onChangeRates, []);
 
   function  onChangeRate(event) {
     setBaseCurrency(event.target.value);
